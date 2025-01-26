@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Tasnuva</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skillset">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="toggle-container">
+            <input type="checkbox" id="toggle" class="toggle-checkbox">
+            <label class="toggle-label" for="toggle">
+                <span class="toggle-ball"></span>
+            </label>
+        </div>
+    </nav>
+    <div class="toggle-container">
+        <input type="checkbox" id="toggle" class="toggle-checkbox">
+        <label class="toggle-label" for="toggle">
+            <span class="toggle-ball"></span>
+        </label>
+    </div>
+    <!-- <section id="home" style="background-image: url('home-background.mov'); background-size: cover; height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <h1 style="background-color: rgba(152, 170, 245, 0.8); padding: 20px; border-radius: 10px; text-align: center; font-weight: normal; line-height: 1.2;">
+            Hello, I'm<br><span class="fade-in" style="font-weight: bold;">Tasnuva Tanjum Ferdous.</span>
+            <hr style="border: none; border-top: 2px solid black; margin-top: 10px;">
+        </h1>
+    </section> -->
+    <section id="home" style="position: relative; height: 100vh; display: flex; justify-content: center; align-items: center; overflow: hidden;">
+        <!-- Video Background -->
+        <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+            <source src="images/home-background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    
+        <!-- Content -->
+        <h1 style="background-color: rgba(152, 170, 245, 0.8); padding: 20px; border-radius: 10px; text-align: center; font-weight: normal; line-height: 1.2; z-index: 1;">
+            Hello, I'm<br><span class="fade-in" style="font-weight: bold;">Tasnuva Tanjum Ferdous.</span>
+            <hr style="border: none; border-top: 2px solid black; margin-top: 10px;">
+        </h1>
+    </section>
+    
+    <section id="about">
+        <h2 style="text-align: center; margin-top: 20px; font-family: 'Georgia', serif; font-size: 1.5em; color: #59748f; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">About Me</h2>
+    </section>
+    <section id="me">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+        <div style="flex: 1; margin-right: 20px; text-align: left; margin-top: -50px;">
+            <p style="margin-right: 20px;">I am a Computer Science and Engineering graduate from Rajshahi 
+                University of Engineering and Technology, Bangladesh and an independent researcher. 
+                My research interests center around <strong style="color: #23a8eb;">Machine Learning, Deep 
+                Learning</strong>, and <strong style="color: #23a8eb;">Natural Language Processing</strong>, with a focus on 
+                exploring their versatile applications across interdisciplinary 
+                domains. 
+                <br><br>
+                My work encompasses research projects like automated 
+                fact-checking and streamlining misinformation detection, integrating 
+                qualitative and empirical approaches with technical expertise. 
+                <br><br> 
+                I enjoy actively participating in co-curricular activities such as 
+                programming contests, debates, workshops, and idea competitions. 
+                My vision is to make a meaningful impact on the world through my 
+                skills and intelligence. My hobby is reading books.</p>
+                <a href="Tasnuva_Resume.pdf" target="_blank" class="cv-button" style="display: inline-block; padding: 10px 20px; background-color: transparent; color: #23a8eb; text-decoration: none; border: 2px solid #23a8eb;margin-top: 20px; border-radius: 5px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#23a8eb'; this.style.color='white';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#23a8eb';">Download CV</a>
+            </div>
+        <img src="my photo.jpg" alt="Your Picture" style="width: 45%; height: auto;margin-top: -70px"> <!-- Shrink the image size -->
+    </div>
+</section>
+<section id="research">
+    <h2 style="text-align: center; margin-top: 10px; font-family: 'Georgia', serif; font-size: 1.5em; color: #59748f; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">My Research</h2>
+</section>
+<section id="research_description">
+    <section id="research_description">
+        <div style="display: flex; justify-content: space-between; margin-top: -80px;">
+            <div style="flex: 1; margin-right: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                <h3>A Progressive Step Towards Automated Fact-Checking by Detecting Context in Diverse Languages: A Prototype for Bangla Facebook Posts</h3>
+                <hr style="border: 1px solid #23a8eb;">
+                <p>Developed an NLP-based "Automated Context Detector" 
+                    to enhance fact-checking for Bangla Facebook
+                     posts, achieving promising results. Built a 
+                     custom dataset and evaluated both traditional 
+                     ML models and advanced NLP models, showcasing 
+                     the potential of ML in fact-checking and providing 
+                     a framework for similar applications.</p>
+                <hr style="border: 1px solid #23a8eb;margin-top: 20px;">
+                <p style="color: blue;">Status: Under Review at ENASE 2025</p>
+            </div>
+            <div style="flex: 1; margin-right: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 15px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                <h3>Streamlining Facebook Fact-Checking: The Role of Proposed Automated Tools</h3>
+                <hr style="border: 1px solid #23a8eb;margin-top:60px">
+                <p>This study explores the spread of false information on Facebook in Bangladesh
+                    and identifies gaps in current fact-checking practices through surveys and 
+                    expert interviews. It proposes automated tools like opinion detectors, 
+                    context detectors, and information extractors to enhance efficiency, 
+                    with potential applications in similar cultural contexts globally.</p>
+                <hr style="border: 1px solid #23a8eb;margin-top:20px">
+                <p style="color: blue;">Status: Expected submission, January 2025</p>
+                <p style="color: blue; margin-left: 50px;">Target Journal: PAJAIS</p>
+            </div>
+            <div style="flex: 1; border: 1px solid #ccc; border-radius: 5px; padding: 15px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                <h3>Leveraging LLMs to Extract Gender Profiles from Social Media posts in the Low-Resource Language Bangla</h3>
+                <hr style="border: 1px solid #23a8eb;margin-top: 60px;">
+                <p>This research focuses on gender profiling in Bangla
+                    social media posts, leveraging writing styles to 
+                    identify anonymous authors. By utilizing large 
+                    language models (LLMs), it addresses the 
+                    unique challenges of Bangla as a 
+                    low-resource language, enhancing cybersecurity 
+                    and combating identity theft.</p>
+                <hr style="border: 1px solid #23a8eb;margin-top: 40px">
+                <p style="color: blue;">Status: Ongoing Project</p>
+            </div>
+        </div>
+    </section>
+
+</section>
+    <section id="projects">
+        <h2 style="text-align: center; margin-top: 60px; font-family: 'Georgia', serif; font-size: 1.5em; color: #59748f; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">My Projects</h2>
+    </section>
+    <section id="projects_des_123">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: -55px;">
+            <div style="flex: 1; margin-right: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                <h3>Fake news Classifier</h3>
+                <hr style="border: 1px solid #23a8eb;">
+                <p>Implemented a classification model utilizing the transformer from the Hugging
+                    Face library. Trained on the BanFakeNews dataset consisting of Bangla textual news, the model demonstrates
+                    effective performance in classifying clickbaits, satire, and fake news.</p>
+                
+            </div>
+            <div style="flex: 1; margin-right: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                <h3>Hospital Management system</h3>
+                <hr style="border: 1px solid #23a8eb;">
+                <p>Developed a robust healthcare Web App via Django, ensuring secure ac-
+                    cess for admin, doctors, patients, and pharmacists. Included medical history access, appointment scheduling,
+                    prescription transfers, ambulance booking, and online consultations, highlighting Django proficiency.</p>
+            </div>
+            <div style="flex: 1; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                <h3> Bookish</h3>
+                <hr style="border: 1px solid #23a8eb;">
+                <p>Implemented a PHP-backend book rental app with admin and user portals. Users create
+                    accounts to rent or offer books. Organized books by genre, featuring a user rating system. Offers numerous
+                    features for an easier, affordable, and engaging reading experience.</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects_des_45">
+        <div style="display:flex; flex-wrap: wrap; justify-content: space-between; margin-top: -55px;">
+            <div style="flex: 0.33; margin-right: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                <h3>Health Checker</h3>
+                <hr style="border: 1px solid #23a8eb;">
+                <p>Developed a Java-based health-tracking Android App with SQLite. Captured vital health data, calculated metrics, and provided personalized guidance.</p>
+            </div>
+            <div style="flex: 0.33; margin-right: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+                <h3>Safeguard</h3>
+                <hr style="border: 1px solid #23a8eb;">
+                <p>Developed an Arduino safety system detecting fire and gas leaks, sending real-time data via a web app and remote alerts. Required hardware-software integration and microcontroller programming.</p>
+            </div>
+            <div style="flex: 0.33; margin-right: 10px;  border-radius: 5px; padding: 10px; ">
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="skillset" style="text-align: center; margin-top: 10px;">
+        <h2 style="font-family: 'Georgia', serif; font-size: 1.8em; color: #59748f; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);margin-top: 70px;">
+            My Skillset
+        </h2>
+    </section>
+    <section id="skills">
+    <div style="background-color: #abc9e1; padding: 40px; text-align: center;border-radius: 10px; margin-top:-10px">
+        <!-- Skills Container -->
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+            <!-- Add each skill icon below -->
+            <img src="images/c_icon.png" alt="C" style="width: 40px; height: 40px;">
+            <img src="images/cpp.png" alt="C++" style="width: 40px; height: 40px;">
+            <img src="images/java.png" alt="Java" style="width: 40px; height: 40px;">
+            <img src="images/python.png" alt="Python" style="width: 40px; height: 40px;">
+            <img src="images/verilog.png" alt="Verilog" style="width: 40px; height: 40px;">
+            <img src="images/latex.png" alt="LaTeX" style="width: 40px; height: 40px;">
+            <img src="images/html.png" alt="HTML" style="width: 40px; height: 40px;">
+            <img src="images/CSS.png" alt="CSS" style="width: 40px; height: 40px;">
+            <img src="images/netbeans.png" alt="Netbeans" style="width: 40px; height: 40px;">
+            <img src="images/vs.png" alt="Visual Studio" style="width: 40px; height: 40px;">
+            <img src="images/jupyter.png" alt="Jupyter Notebook" style="width: 40px; height: 40px;">
+            <img src="images/OpenGL.png" alt="OpenGL" style="width: 40px; height: 40px;">
+            <img src="images/anroidstudio.png" alt="Android Studio" style="width: 40px; height: 40px;">
+            <img src="images/mysql.png" alt="MySQL" style="width: 40px; height: 40px;">
+            <img src="images/sqlite.png" alt="SQLite" style="width: 40px; height: 40px;">
+            <img src="images/postgresql.png" alt="PostgreSQL" style="width: 40px; height: 40px;">
+            <img src="images/pytorch.png" alt="PyTorch" style="width: 40px; height: 40px;">
+            <img src="images/hf-logo.png" alt="Huggingface" style="width: 40px; height: 40px;">
+            <img src="images/tensorflow-icon.png" alt="TensorFlow" style="width: 40px; height: 40px;">
+            <img src="images/Pandas.png" alt="Pandas" style="width: 40px; height: 40px;">
+            <img src="images/numpy.png" alt="NumPy" style="width: 40px; height: 40px;">
+            <img src="images/matplotlib.png" alt="Matplotlib" style="width: 40px; height: 40px;">
+            <img src="images/django.png" alt="Django" style="width: 40px; height: 40px;">
+            <img src="images/arduino.png" alt="Arduino" style="width: 40px; height: 40px;">
+        </div>
+    </div>
+    </section>
+
+    <section id="education" style="text-align: center; margin-top: 20px;">
+        <h2 style="font-family: 'Georgia', serif; font-size: 1.8em; color: #59748f; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">
+            My Education
+        </h2>
+    </section>
+    
+    <section id="education_timeline">
+        <div class="timeline" style="position: relative; margin: 20px auto; padding: 20px 0; width: 80%; margin-top: -60px;">
+            <!-- Vertical line -->
+            <div style="content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 4px; height: 100%; background-color: #5168da;"></div>
+    
+            <!-- Timeline Item 1 -->
+            <div style="position: relative; margin: 20px 0; width: calc(50% - 5px); left: 0; text-align: right;">
+                <div style="position: absolute; top: 20px; right: -12px; width: 20px; height: 20px; background: #23a8eb; border-radius: 50%; border: 4px solid #fff;"></div>
+                <div style="padding: 15px; background: #f4f4f9; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: inline-block;">
+                    <h3 style="margin: 0; color: #23a8eb;">Rajshahi University of Engineering and Technology</h3>
+                    <p style="margin: 5px 0 0; color: #555;">Bachelor's Degree in Computer Science <br>2018-2023</p>
+                </div>
+            </div>
+    
+            <!-- Timeline Item 2 -->
+            <div style="position: relative; margin: 20px 0; width: calc(50% - 20px); left: 50%; text-align: left;">
+                <div style="position: absolute; top: 20px; left: -12px; width: 20px; height: 20px; background: #23a8eb; border-radius: 50%; border: 4px solid #fff;"></div>
+                <div style="padding: 15px; background: #f4f4f9; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: inline-block;">
+                    <h3 style="margin: 0; color: #23a8eb;">Gaibandha Government College,Gaibandha</h3>
+                    <p style="margin: 5px 0 0; color: #555;">Higher Secondary Certificate <br>2015~2017</p>
+                </div>
+            </div>
+    
+            <!-- Timeline Item 3 -->
+            <div style="position: relative; margin: 20px 0; width: calc(50% - 5px); left: 0; text-align: right;">
+                <div style="position: absolute; top: 20px; right: -12px; width: 20px; height: 20px; background: #23a8eb; border-radius: 50%; border: 4px solid #fff;"></div>
+                <div style="padding: 15px; background: #f4f4f9; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: inline-block;">
+                    <h3 style="margin: 0; color: #23a8eb;">Gaibandha Government Girls' High School</h3>
+                    <p style="margin: 5px 0 0; color: #555;">Secondary School Certificate <br>2013 ~ 2015</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2 style="font-family: 'Georgia', serif; font-size: 1.8em; color: #59748f; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);margin-top: 70px;">
+            Get in Touch
+        </h2>
+    </section>
+    <section id="contact_info" style="text-align: center; padding: 20px; margin-bottom: 20%;">
+        <div class="social-icons" style="display: flex; justify-content: center; gap: 20px;">
+            <a href="mailto:tasnuvatanjum0709@gmail.com" title="Email" style="text-decoration: none; color:rgb(60, 77, 160); font-size: 24px; display: flex; justify-content: center; align-items: center; width: 50px; height: 50px; border: 2px solid rgb(60, 77, 160); border-radius: 10px; transition: all 0.3s ease;">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.facebook.com/share/1AzAoqrbGx/" target="_blank" title="Twitter" style="text-decoration: none; color: rgb(60, 77, 160); font-size: 24px; display: flex; justify-content: center; align-items: center; width: 50px; height: 50px; border: 2px solid rgb(60, 77, 160); border-radius: 10px; transition: all 0.3s ease;">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/tasnu_tanjum/" target="_blank" title="Instagram" style="text-decoration: none; color: rgb(60, 77, 160); font-size: 24px; display: flex; justify-content: center; align-items: center; width: 50px; height: 50px; border: 2px solid rgb(60, 77, 160); border-radius: 10px; transition: all 0.3s ease;">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/Tasnuva07" target="_blank" title="GitHub" style="text-decoration: none; color: rgb(60, 77, 160); font-size: 24px; display: flex; justify-content: center; align-items: center; width: 50px; height: 50px; border: 2px solid rgb(60, 77, 160); border-radius: 10px; transition: all 0.3s ease;">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/tasnuva-tanjum-ferdous-0050a7208/" target="_blank" title="LinkedIn" style="text-decoration: none; color: rgb(60, 77, 160); font-size: 24px; display: flex; justify-content: center; align-items: center; width: 50px; height: 50px; border: 2px solid rgb(60, 77, 160); border-radius: 10px; transition: all 0.3s ease;">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </section>
+    <footer style="background-color: #1a1a1a; color: #b3b3b3; text-align: center; padding: 20px; font-size: 14px; display: flex; justify-content: center; align-items: center; gap: 10px;margin-top: -80px;">
+        <span>&copy; 2025 All rights reserved</span>
+        <span style="border-left: 1px solid #b3b3b3; height: 15px;"></span>
+        <span style="background-color: #404040; color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold;">
+            Tasnuva Tanjum Ferdous
+        </span>
+    </footer>
+    <script>
+        const toggleCheckbox = document.getElementById('toggle');
+        const body = document.body;
+    
+        // Set default mode to light
+        body.classList.add('day-mode');
+    
+        toggleCheckbox.addEventListener('change', () => {
+            if (toggleCheckbox.checked) {
+                body.classList.add('night-mode');
+                body.classList.remove('day-mode');
+            } else {
+                body.classList.add('day-mode');
+                body.classList.remove('night-mode');
+            }
+        });
+    </script>
+</body>
+</html>
