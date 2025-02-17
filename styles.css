@@ -9,8 +9,8 @@ body {
 
 .toggle-container {
     position: relative;
-    width: 40px; /* Keep width for larger oval shape */
-    height: 10px; /* Keep height for larger oval shape */
+    width: 30px; /* Keep width for larger oval shape */
+    height: 15px; /* Keep height for larger oval shape */
 }
 
 .toggle-checkbox {
@@ -39,19 +39,19 @@ body {
 }
 
 .toggle-ball {
-    width: 15px; /* Decrease ball size */
-    height: 15px; /* Decrease ball size */
+    width: 10px; /* Decrease ball size */
+    height: 10px; /* Decrease ball size */
     background-color: navy;
     border-radius: 50%; /* Ensure ball is round */
 }
 
 .toggle-checkbox:checked + .toggle-label .toggle-ball {
-    transform: translateX(36px); /* Adjust for smaller ball size */
+    transform: translateX(10px); /* Adjust for smaller ball size */
 }
 
-.toggle-checkbox:checked + .toggle-label .toggle-ball {
+/* .toggle-checkbox:checked + .toggle-label .toggle-ball {
     transform: translateX(15px);
-}
+} */
 
 
 body.day-mode {
@@ -67,22 +67,32 @@ body.night-mode {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
     position: fixed; /* Change to fixed positioning */
     top: 0; /* Stick to the top */
     left: 0;
     right: 0;
-    background-color: #333; /* Set a background color for the navigation bar */
+    background-color: #333; opacity: 0.80;/* Set a background color for the navigation bar */
     color: white; /* Set text color to white for contrast */
-    padding: 13px 20px;
+    padding: 5px 15px;
     z-index: 1000; /* Ensure it stays on top of other content */
 }
 
+a {
+    text-decoration: none;
+    color: white; /* Adjust color based on your design */
+    
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #23a8eb;
+}
 .toggle-container {
-    /*position: absolute; /* Change to absolute positioning */
-    /*top: 10px; /* Adjust top position */
+    position: absolute; /* Change to absolute positioning */
+    top: 30px; /* Adjust top position */
     /*right: 10px; /* Adjust right position */
-    margin-left: auto;
+    margin-left: 95%;
 }
 
 nav ul {
@@ -90,6 +100,8 @@ nav ul {
     list-style: none;
     padding: 0;
 }
+/* Assuming your navigation bar has a class called .navbar */
+
 
 nav ul li {
     display: flex;
