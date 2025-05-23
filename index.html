@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <nav>
@@ -19,7 +20,6 @@
             <li><a href="#skillset">Skills</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
-
         </ul>
         <div class="toggle-container">
             <input type="checkbox" id="toggle" class="toggle-checkbox">
@@ -27,23 +27,14 @@
                 <span class="toggle-ball"></span>
             </label>
         </div> 
-        
     </nav>
 
-    <!-- <section id="home" style="background-image: url('home-background.mov'); background-size: cover; height: 100vh; display: flex; justify-content: center; align-items: center;">
-        <h1 style="background-color: rgba(152, 170, 245, 0.8); padding: 20px; border-radius: 10px; text-align: center; font-weight: normal; line-height: 1.2;">
-            Hello, I'm<br><span class="fade-in" style="font-weight: bold;">Tasnuva Tanjum Ferdous.</span>
-            <hr style="border: none; border-top: 2px solid black; margin-top: 10px;">
-        </h1>
-    </section> -->
     <section id="home" style="position: relative; height: 100vh; display: flex; justify-content: center; align-items: center; overflow: hidden;">
-        <!-- Video Background -->
         <video autoplay muted loop playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
             <source src="images/home-background.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     
-        <!-- Content -->
         <h1 style="background-color: rgba(152, 170, 245, 0.8); padding: 20px; border-radius: 10px; text-align: center; font-weight: normal; line-height: 1.2; z-index: 1;">
             Hello, I'm<br><span class="fade-in" style="font-weight: bold;">Tasnuva Tanjum Ferdous.</span>
             <hr style="border: none; border-top: 2px solid black; margin-top: 10px;">
@@ -58,10 +49,8 @@
         <div style="flex: 1; margin-right: 20px; text-align: left; margin-top: -50px;">
             <p style="margin-right: 20px;">I am a Computer Science and Engineering graduate from Rajshahi 
                 University of Engineering and Technology, Bangladesh and an independent researcher. 
-                My research interests center around <strong style="color: #23a8eb;">Machine Learning, Deep 
-                Learning</strong>, and <strong style="color: #23a8eb;">Natural Language Processing</strong>, with a focus on 
-                exploring their versatile applications across interdisciplinary 
-                domains. 
+                My research interests center around <strong style="color: #23a8eb;">Machine Learning,</strong>, and <strong style="color: #23a8eb;">Natural Language Processing</strong>, with a focus on 
+                exploring their versatile applications across interdisciplinary domains like Human-Computer Interaction, Software Engineering, cybersecurity
                 <br><br>
                 My work encompasses research projects like automated 
                 fact-checking and streamlining misinformation detection, integrating 
@@ -70,7 +59,7 @@
                 I enjoy actively participating in co-curricular activities such as 
                 programming contests, debates, workshops, and idea competitions. 
                 My vision is to make a meaningful impact on the world through my 
-                skills and intelligence. My hobby is reading books.</p>
+                skills and intelligence. I love reading books and watching movies during my free times.</p>
                 <a href="Tasnuva_Resume.pdf" target="_blank" class="cv-button" style="display: inline-block; padding: 10px 20px; background-color: transparent; color: #23a8eb; text-decoration: none; border: 2px solid #23a8eb;margin-top: 20px; border-radius: 5px; transition: background-color 0.3s, color 0.3s;" onmouseover="this.style.backgroundColor='#23a8eb'; this.style.color='white';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#23a8eb';">Download CV</a>
             </div>
         <img src="my photo.jpg" alt="Your Picture" style="width: 45%; height: auto;margin-top: -70px"> <!-- Shrink the image size -->
@@ -84,6 +73,11 @@
             <div style="display: flex; justify-content: flex-start; margin-top: -80px;">
                 <div style="width: 50%; border: 1px solid #ccc; border-radius: 5px; padding: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
                     <h3>A Progressive Step Towards Automated Fact-Checking by Detecting Context in Diverse Languages: A Prototype for Bangla Facebook Posts</h3>
+                    <div class="tag-container">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">Fact-Checking</span>
+                    </div>
                     <hr style="border: 1px solid #23a8eb;">
                     <p>Developed an NLP-based "Automated Context Detector" 
                         to enhance fact-checking for Bangla Facebook
@@ -93,8 +87,8 @@
                         the potential of ML in fact-checking and providing 
                         a framework for similar applications.</p>
                     <hr style="border: 1px solid #23a8eb;margin-top: 20px;">
-                    <p style="color: blue;">Status: <a href="https://enase.scitevents.org/" target="_blank" rel="noopener noreferrer">
-                        To appear in Proceedings of the 20th International Conference on ENASE 2025
+                    <p style="color: blue;">Link: <a href="https://www.scitepress.org/publishedPapers/2025/134300/pdf/index.html" target="_blank" rel="noopener noreferrer">Published in Proceedings of the 20th International 
+                        Conference on ENASE 2025
                     </a></p>
                 </div>
             </div>
@@ -105,38 +99,61 @@
 <section id="research">
     <h2 style="text-align: center; margin-top: 10px; font-family: 'Georgia', serif; font-size: 1.5em; color: #59748f; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">My Research</h2>
 </section>
+
 <section id="research_description">
     <section id="research_description">
         <div style="display: flex; justify-content: space-between; margin-top: -80px;">
-            <div style="flex: 1; margin-right: 10px; border: 1px solid #ccc; border-radius: 5px; padding: 15px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
-                <h3>Streamlining Facebook Fact-Checking: The Role of Proposed Automated Tools</h3>
-                <hr style="border: 1px solid #23a8eb;margin-top:60px">
-                <p>This study explores the spread of false information on Facebook in Bangladesh
-                    and identifies gaps in current fact-checking practices through surveys and 
-                    expert interviews. It proposes automated tools like opinion detectors, 
-                    context detectors, and information extractors to enhance efficiency, 
-                    with potential applications in similar cultural contexts globally.</p>
-                <hr style="border: 1px solid #23a8eb;margin-top:20px">
-                <p style="color: blue;">Status: Expected submission, March 2025</p>
-                <p style="color: blue; margin-left: 50px;">Target Journal: PAJAIS</p>
-            </div>
             <div style="flex: 1; border: 1px solid #ccc; border-radius: 5px; padding: 15px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
-                <h3>Leveraging LLMs to Extract Gender Profiles from Social Media posts in the Low-Resource Language Bangla</h3>
-                <hr style="border: 1px solid #23a8eb;margin-top: 60px;">
-                <p>This research focuses on gender profiling in Bangla
-                    social media posts, leveraging writing styles to 
-                    identify anonymous authors. By utilizing large 
-                    language models (LLMs), it addresses the 
-                    unique challenges of Bangla as a 
-                    low-resource language, enhancing cybersecurity 
-                    and combating identity theft.</p>
-                <hr style="border: 1px solid #23a8eb;margin-top: 40px">
-                <p style="color: blue;">Status: Ongoing Project</p>
+                <div style="display: flex; align-items: start;">
+                    <img src="images/fact-checking.jpg" alt="Fact Checking" class="clickable-image" style="width: 50%; height: 30%; margin-right: 15px;" onclick="openModal(this.src)">
+                    <div>
+                        <h3>Streamlining Fact-Checking: Designing a Comprehensive Guide for Fact-Checkers and End-Users</h3>
+                        <div class="tag-container">
+                            <span class="tag">HCI</span>
+                            <span class="tag">Qualitative Analysis</span>
+                            <span class="tag">Social Media Analysis</span>
+                        </div>
+                        <hr style="border: 1px solid #23a8eb;margin-top:30px">
+                        <p>This study focuses on understanding the issue of false information dissemination through Facebook in Bangladesh
+                            and proposing solutions. It combines a survey of Bangladeshi Facebook users with interviews of professional
+                            fact-checkers and experts to identify gaps in current fact-checking practices, particularly within the country's
+                            socio-political context. Additionally, a workshop was organized with computer science and cybersecurity experts
+                            to gather technical perspectives on combating misinformation. Based on the findings, the study offers a compre-
+                            hensive guideline to help both fact-checkers and everyday users verify Facebook content. These guidelines can
+                            also be adapted to similar cultural contexts to enhance global fact-checking efforts.</p>
+                        <hr style="border: 1px solid #23a8eb;margin-top:20px">
+                        <p style="color: blue;">Status: Expected submission, June 2025</p>
+                        <p style="color: blue; margin-left: 50px;">Target Journal: COMPASS</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
 </section>
+
+<section id="research2" style="margin-top: 50px;">
+    <!-- <h2 style="text-align: center; font-family: 'Georgia', serif; font-size: 1.5em; color: #59748f; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">Ongoing Research</h2> -->
+    <div style="display: flex; justify-content: left; margin-top: 20px;">
+        <div style="width: 50%; border: 1px solid #ccc; border-radius: 5px; padding: 15px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <h3>Leveraging LLMs to Extract Gender Profiles from Social Media posts in the Low-Resource Language Bangla</h3>
+            <div class="tag-container">
+                <span class="tag">LLMs</span>
+                <span class="tag">NLP</span>
+            </div>
+            <hr style="border: 1px solid #23a8eb;margin-top: 60px;">
+            <p>This research focuses on gender profiling in Bangla
+                social media posts, leveraging writing styles to 
+                identify anonymous authors. By utilizing large 
+                language models (LLMs), it addresses the 
+                unique challenges of Bangla as a 
+                low-resource language, enhancing cybersecurity 
+                and combating identity theft.</p>
+            <hr style="border: 1px solid #23a8eb;margin-top: 40px">
+            <p style="color: blue;">Status: Ongoing Project</p>
+        </div>
+    </div>
+</section>
+
     <section id="projects">
         <h2 style="text-align: center; margin-top: 60px; font-family: 'Georgia', serif; font-size: 1.5em; color: #59748f; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">My Projects</h2>
     </section>
@@ -293,6 +310,11 @@
             Tasnuva Tanjum Ferdous
         </span>
     </footer>
+    <!-- Modal for fullscreen image -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <img class="modal-content" id="modalImage" onclick="event.stopPropagation()">
+    </div>
+
     <script>
         const toggleCheckbox = document.getElementById('toggle');
         const body = document.body;
@@ -307,6 +329,31 @@
             } else {
                 body.classList.add('day-mode');
                 body.classList.remove('night-mode');
+            }
+        });
+
+        function openModal(imgSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modalImg.src = imgSrc;
+            modal.classList.add('show');
+            
+            // Prevent scrolling of the background
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.remove('show');
+            
+            // Re-enable scrolling
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
             }
         });
     </script>
